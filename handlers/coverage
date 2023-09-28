@@ -1,0 +1,27 @@
+mode: set
+go_api/handlers/api_handlers.go:30.38,35.2 2 1
+go_api/handlers/api_handlers.go:37.21,38.25 1 1
+go_api/handlers/api_handlers.go:38.25,41.3 2 1
+go_api/handlers/api_handlers.go:44.36,45.19 1 1
+go_api/handlers/api_handlers.go:45.19,47.3 1 1
+go_api/handlers/api_handlers.go:47.8,56.3 5 1
+go_api/handlers/api_handlers.go:59.49,60.31 1 1
+go_api/handlers/api_handlers.go:60.31,61.32 1 1
+go_api/handlers/api_handlers.go:61.32,63.4 1 1
+go_api/handlers/api_handlers.go:65.2,65.18 1 1
+go_api/handlers/api_handlers.go:68.38,69.19 1 1
+go_api/handlers/api_handlers.go:69.19,71.3 1 1
+go_api/handlers/api_handlers.go:71.8,75.15 3 1
+go_api/handlers/api_handlers.go:75.15,84.4 5 1
+go_api/handlers/api_handlers.go:84.9,90.4 5 1
+go_api/handlers/api_handlers.go:95.39,97.19 2 1
+go_api/handlers/api_handlers.go:97.19,99.3 1 1
+go_api/handlers/api_handlers.go:99.8,100.34 1 1
+go_api/handlers/api_handlers.go:100.34,102.4 1 1
+go_api/handlers/api_handlers.go:104.3,108.36 4 1
+go_api/handlers/api_handlers.go:112.41,116.14 3 1
+go_api/handlers/api_handlers.go:116.14,125.3 6 1
+go_api/handlers/api_handlers.go:125.8,132.3 5 1
+go_api/handlers/api_handlers.go:135.41,141.16 3 1
+go_api/handlers/api_handlers.go:141.16,143.3 1 1
+go_api/handlers/api_handlers.go:145.2,146.33 2 1
