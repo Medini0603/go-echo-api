@@ -26,9 +26,12 @@ type BarJSONResponse struct {
 }
 
 var bars []Foo
+var barcount = 0
 
 func Greetings(c echo.Context) error {
-	loadTestBars()
+	if len(bars) < 1 {
+		loadTestBars()
+	}
 	return c.JSON(http.StatusOK, HelloWorld{
 		Msg: "Hello World!!",
 	})
@@ -38,6 +41,7 @@ func loadTestBars() {
 	for i := 1; i < 6; i++ {
 		tb := Foo{UUID: strconv.Itoa(i), Bar: rand.Intn(100)}
 		bars = append(bars, tb)
+		barcount += 1
 	}
 }
 
@@ -134,7 +138,7 @@ func DeleteBarsId(c echo.Context) error {
 
 func CreateNewBar(c echo.Context) error {
 	u := &Foo{
-		UUID: strconv.Itoa(len(bars) + 1),
+		UUID: strconv.Itoa(barcount + 1),
 	}
 	err := c.Bind(u)
 
@@ -143,5 +147,6 @@ func CreateNewBar(c echo.Context) error {
 	}
 
 	bars = append(bars, *u)
+	barcount += 1
 	return c.JSON(http.StatusOK, u)
 }
